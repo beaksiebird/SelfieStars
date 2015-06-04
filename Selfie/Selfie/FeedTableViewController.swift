@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import Parse
 
 class FeedTableViewController: UITableViewController {
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+      if PFUser.currentUser() == nil {
+            var welcomeVC = storyboard?.instantiateViewControllerWithIdentifier("welcomeVC") as! UINavigationController
+            
+            self.presentViewController(welcomeVC, animated: true, completion: nil)
+         
+            
+        } else {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
