@@ -9,14 +9,34 @@
 import UIKit
 import Parse
 
-class PrettyButton: UIButton {
+@IBDesignable class PrettyButton: UIButton {
+    
+    @IBInspectable var cornerRadius: CGFloat = 10
+    @IBInspectable var fillColor: UIColor = UIColor.clearColor()
+    @IBInspectable var strokeColor: UIColor = DARK_BLUE
+    @IBInspectable var strokeWidth: CGFloat = 1 
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+   
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        
+        var context = UIGraphicsGetCurrentContext()
+        
+        let insetRect = CGRectInset(rect, strokeWidth / 2, strokeWidth / 2)
+        
+        let path = UIBezierPath(roundedRect: insetRect, cornerRadius: cornerRadius)
+        
+        fillColor.set()
+    
+        CGContextAddPath(context, path.CGPath)
+        CGContextFillPath(context)
+        
+        strokeColor.set()
+        
+        CGContextSetLineWidth(context, strokeWidth)
+        CGContextAddPath(context, path.CGPath)
+        CGContextStrokePath(context)
+        
+        
     }
-    */
 
 }

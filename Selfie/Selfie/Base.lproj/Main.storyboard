@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Hs-Bw-CWp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -51,34 +51,60 @@
                         <viewControllerLayoutGuide type="bottom" id="Tvc-gA-mJU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Xq-Ce-2Jz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-wU-cBu">
-                                <rect key="frame" x="115" y="391" width="364" height="30"/>
-                                <color key="backgroundColor" red="0.56505017859999995" green="1" blue="0.24088262399999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="iGy-er-giw">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-wU-cBu" customClass="PrettyButton" customModule="Selfie" customModuleProvider="target">
+                                <rect key="frame" x="20" y="540" width="260" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HZ2-xN-V3O"/>
+                                    <constraint firstAttribute="height" constant="40" id="HZ2-xN-V3O"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="pwI-DM-oFG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="REGISTER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.0" green="0.25098039220000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pwI-DM-oFG"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="rbr-UE-fCg" kind="presentation" id="1js-56-hxG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-Dq-sjg">
-                                <rect key="frame" x="121" y="262" width="358" height="32"/>
-                                <color key="backgroundColor" red="0.56505017864286056" green="1" blue="0.24088262400321681" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-Dq-sjg" customClass="PrettyButton" customModule="Selfie" customModuleProvider="target">
+                                <rect key="frame" x="20" y="492" width="260" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="P4x-eH-R42"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Zen-NX-EPI"/>
+                                    <constraint firstAttribute="height" constant="40" id="bCJ-31-fjv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.0" green="0.25098039220000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="cKG-LZ-A8x" kind="presentation" id="2By-Nh-RaD"/>
                                 </connections>
@@ -86,15 +112,35 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" constant="121" id="3Dw-bX-5mf"/>
-                            <constraint firstItem="bm5-wU-cBu" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" constant="115" id="BoR-7K-Mbw"/>
-                            <constraint firstAttribute="centerX" secondItem="bm5-wU-cBu" secondAttribute="centerX" constant="3" id="E5P-mr-alP"/>
-                            <constraint firstAttribute="centerX" secondItem="hBS-Dq-sjg" secondAttribute="centerX" id="G2L-em-0WA"/>
-                            <constraint firstItem="bm5-wU-cBu" firstAttribute="top" secondItem="hBS-Dq-sjg" secondAttribute="bottom" constant="97" id="QcX-sB-acI"/>
-                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="top" secondItem="t5w-Vq-NSA" secondAttribute="bottom" constant="198" id="Zu3-pa-X7d"/>
+                            <constraint firstItem="iGy-er-giw" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" id="1Sj-LV-Ozw"/>
+                            <constraint firstAttribute="trailing" secondItem="bm5-wU-cBu" secondAttribute="trailing" constant="20" id="95H-k7-LFd"/>
+                            <constraint firstItem="bm5-wU-cBu" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" constant="20" id="BoR-7K-Mbw"/>
+                            <constraint firstAttribute="centerX" secondItem="bm5-wU-cBu" secondAttribute="centerX" constant="-0.5" id="E5P-mr-alP"/>
+                            <constraint firstItem="iGy-er-giw" firstAttribute="top" secondItem="9Xq-Ce-2Jz" secondAttribute="top" id="HFU-zC-Gpo"/>
+                            <constraint firstAttribute="trailing" secondItem="iGy-er-giw" secondAttribute="trailing" id="Uc9-ah-qNy"/>
+                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="top" secondItem="t5w-Vq-NSA" secondAttribute="bottom" constant="447" id="Vnn-8J-8hk"/>
+                            <constraint firstAttribute="trailing" secondItem="hBS-Dq-sjg" secondAttribute="trailing" constant="20" id="WLz-D8-0WH"/>
+                            <constraint firstItem="Tvc-gA-mJU" firstAttribute="top" secondItem="iGy-er-giw" secondAttribute="bottom" id="WRf-fc-OSV"/>
+                            <constraint firstItem="bm5-wU-cBu" firstAttribute="top" secondItem="hBS-Dq-sjg" secondAttribute="bottom" constant="10" id="XCB-Yx-FqF"/>
+                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="trailing" secondItem="iGy-er-giw" secondAttribute="trailing" constant="-4" id="aZM-YM-9b3"/>
+                            <constraint firstItem="Tvc-gA-mJU" firstAttribute="top" secondItem="bm5-wU-cBu" secondAttribute="bottom" constant="20" id="pcs-6L-dMn"/>
+                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" constant="20" id="qUq-TO-tkP"/>
+                            <constraint firstItem="bm5-wU-cBu" firstAttribute="leading" secondItem="9Xq-Ce-2Jz" secondAttribute="leading" constant="20" id="qZo-M5-slm"/>
+                            <constraint firstItem="hBS-Dq-sjg" firstAttribute="leading" secondItem="iGy-er-giw" secondAttribute="leading" constant="5" id="s8M-Kj-Te4"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Vnn-8J-8hk"/>
+                                <exclude reference="aZM-YM-9b3"/>
+                                <exclude reference="s8M-Kj-Te4"/>
+                                <exclude reference="BoR-7K-Mbw"/>
+                                <exclude reference="E5P-mr-alP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Xbx-7Z-JeN"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yd2-6g-MA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +341,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2b3-mx-WMQ">
             <objects>
-                <navigationController storyboardIdentifier="welcomeNVC" automaticallyAdjustsScrollViewInsets="NO" id="M4d-Qh-U27" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="welcomeNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="M4d-Qh-U27" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aJG-Vp-1Mc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -415,6 +461,9 @@
             <point key="canvasLocation" x="1752" y="600"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splash" width="288" height="512"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2d7-A6-hbH"/>
     </inferredMetricsTieBreakers>

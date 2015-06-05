@@ -16,15 +16,22 @@ class FeedTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      if PFUser.currentUser() == nil {
-            var welcomeVC = storyboard?.instantiateViewControllerWithIdentifier("welcomeVC") as! UINavigationController
+    
+        
+     if let user = PFUser.currentUser() {
+      
+        
+       } else {
+        
+        if let welcomeVC = storyboard?.instantiateViewControllerWithIdentifier("welcomeNC") as? UINavigationController {
             
-            self.presentViewController(welcomeVC, animated: true, completion: nil)
-         
-            
-        } else {
-            
+            self.presentViewController(welcomeVC, animated: false, completion: nil)
+
         }
+        
+
+       }
+        
     }
 
     override func didReceiveMemoryWarning() {

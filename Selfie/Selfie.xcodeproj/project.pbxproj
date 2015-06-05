@@ -40,6 +40,7 @@
 		CD7741971B20F6A500B992A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7741961B20F6A500B992A6 /* libz.dylib */; };
 		CD7741991B20F6AE00B992A6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7741981B20F6AE00B992A6 /* libsqlite3.dylib */; };
 		CD7741CB1B21CDEF00B992A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7741CA1B21CDEF00B992A6 /* Images.xcassets */; };
+		CD7741CD1B21E82500B992A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7741CC1B21E82500B992A6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		CD7741961B20F6A500B992A6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CD7741981B20F6AE00B992A6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CD7741CA1B21CDEF00B992A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD7741CC1B21E82500B992A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				CD77413A1B20A4FE00B992A6 /* LaunchScreen.xib */,
 				CD7741CA1B21CDEF00B992A6 /* Images.xcassets */,
 				CD7741301B20A4FE00B992A6 /* Info.plist */,
+				CD7741CC1B21E82500B992A6 /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7741781B20D67B00B992A6 /* PrettyField.swift in Sources */,
+				CD7741CD1B21E82500B992A6 /* Constants.swift in Sources */,
 				CD77417C1B20D75600B992A6 /* StarButton.swift in Sources */,
 				CD7741661B20D07600B992A6 /* RegisterViewController.swift in Sources */,
 				CD7741701B20D55900B992A6 /* FeedTableViewCell.m in Sources */,
