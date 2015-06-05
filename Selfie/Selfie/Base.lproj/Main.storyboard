@@ -325,9 +325,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJE-dj-WZm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSk-tS-Xgw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J5j-Sg-DCc">
                                 <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <constraints>
@@ -381,6 +378,9 @@
                                     <action selector="filterIntensityChanged:" destination="Cy1-mN-njv" eventType="valueChanged" id="L4f-1G-Tm1"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sSk-tS-Xgw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -389,7 +389,7 @@
                             <constraint firstItem="1jA-aC-Q42" firstAttribute="top" secondItem="J5j-Sg-DCc" secondAttribute="bottom" id="CXZ-qh-qws"/>
                             <constraint firstItem="Sua-f5-Njj" firstAttribute="leading" secondItem="GCe-dM-sBb" secondAttribute="leadingMargin" id="ENF-vF-WoI"/>
                             <constraint firstItem="J5j-Sg-DCc" firstAttribute="top" secondItem="oJE-dj-WZm" secondAttribute="bottom" id="MV5-7c-4yk"/>
-                            <constraint firstItem="1jA-aC-Q42" firstAttribute="top" secondItem="sSk-tS-Xgw" secondAttribute="bottom" constant="100" id="Qpe-18-tGu"/>
+                            <constraint firstItem="1jA-aC-Q42" firstAttribute="top" secondItem="sSk-tS-Xgw" secondAttribute="bottom" constant="56" id="Qpe-18-tGu"/>
                             <constraint firstItem="oJE-dj-WZm" firstAttribute="top" secondItem="GCe-dM-sBb" secondAttribute="top" id="Rhd-DR-2mF"/>
                             <constraint firstItem="oJE-dj-WZm" firstAttribute="leading" secondItem="GCe-dM-sBb" secondAttribute="leading" id="WXQ-fQ-9Uy"/>
                             <constraint firstItem="sSk-tS-Xgw" firstAttribute="leading" secondItem="GCe-dM-sBb" secondAttribute="leading" id="X4R-YJ-zsG"/>
