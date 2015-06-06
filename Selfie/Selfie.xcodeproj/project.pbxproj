@@ -39,8 +39,8 @@
 		CD7741951B20F69C00B992A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7741941B20F69C00B992A6 /* SystemConfiguration.framework */; };
 		CD7741971B20F6A500B992A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7741961B20F6A500B992A6 /* libz.dylib */; };
 		CD7741991B20F6AE00B992A6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7741981B20F6AE00B992A6 /* libsqlite3.dylib */; };
-		CD7741CB1B21CDEF00B992A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7741CA1B21CDEF00B992A6 /* Images.xcassets */; };
 		CD7741CD1B21E82500B992A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7741CC1B21E82500B992A6 /* Constants.swift */; };
+		CD8380C51B2291A00004D7D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8380C41B2291A00004D7D6 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +96,8 @@
 		CD7741941B20F69C00B992A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CD7741961B20F6A500B992A6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CD7741981B20F6AE00B992A6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		CD7741CA1B21CDEF00B992A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CD7741CC1B21E82500B992A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD8380C41B2291A00004D7D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +181,8 @@
 				CD7741801B20F5FC00B992A6 /* Bolts.framework */,
 				CD7741511B20CCCF00B992A6 /* Selfie-Bridging-Header.h */,
 				CD7741311B20A4FE00B992A6 /* AppDelegate.swift */,
+				CD8380C41B2291A00004D7D6 /* Images.xcassets */,
 				CD77413A1B20A4FE00B992A6 /* LaunchScreen.xib */,
-				CD7741CA1B21CDEF00B992A6 /* Images.xcassets */,
 				CD7741301B20A4FE00B992A6 /* Info.plist */,
 				CD7741CC1B21E82500B992A6 /* Constants.swift */,
 			);
@@ -365,8 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8380C51B2291A00004D7D6 /* Images.xcassets in Resources */,
 				CD77417F1B20E7A100B992A6 /* Main.storyboard in Resources */,
-				CD7741CB1B21CDEF00B992A6 /* Images.xcassets in Resources */,
 				CD77413C1B20A4FE00B992A6 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +612,7 @@
 				CD77414D1B20A4FF00B992A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD77414E1B20A4FF00B992A6 /* Build configuration list for PBXNativeTarget "SelfieTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +621,7 @@
 				CD7741501B20A4FF00B992A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
